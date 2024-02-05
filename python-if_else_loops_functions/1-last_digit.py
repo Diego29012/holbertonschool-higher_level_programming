@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
+print(number)
 last_digit = number
 last_digit = str(number)[-1]
 
