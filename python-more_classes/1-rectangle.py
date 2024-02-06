@@ -1,15 +1,16 @@
 #!/usr/bin/python3
-"""Creates a Rectangle class"""
+"""this module defines a rectangle class"""
+
 
 class Rectangle:
-    """defines a Rectangle class"""
+    """this defines the class"""
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+        self.height = height
+        self.width = width
 
     @property
     def width(self):
-        return self.__width   
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -18,7 +19,7 @@ class Rectangle:
         elif value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-       
+
     @property
     def height(self):
         return self.__height
@@ -30,4 +31,3 @@ class Rectangle:
         elif value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
