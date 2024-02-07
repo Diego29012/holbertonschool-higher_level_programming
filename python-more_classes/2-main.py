@@ -10,3 +10,4 @@ my_rectangle.width = 10
 my_rectangle.height = 3
 print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
 
+
