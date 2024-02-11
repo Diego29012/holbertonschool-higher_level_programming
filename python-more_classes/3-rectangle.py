@@ -42,5 +42,11 @@ class Rectangle:
         else:
             return 2 * (self.__height + self.__width
 
- 	def __str__(self):
-        	if self.__height != 0 and self.__width != 0:
+	def __str__(self):
+
+        rectangle = ""
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        for d in range(self.__height):
+            rectangle = rectangle + ("#" * self.__width + '\n')
+        return rectangle[:-1]
