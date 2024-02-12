@@ -42,7 +42,7 @@ class Rectangle:
         else:
             return 2 * (self.__height + self.__width
 
-    def __str__(self):
+	def __str__(self):
         """
         Returns a string the rectangle.
         """
