@@ -85,3 +85,8 @@ class Rectangle(Base):
             print()
         for elements in range(self.height):
             print(' ' * self.x + '#' * self.width)
+            
+    def __str__(self):
+        """Return a formatted string"""
+        return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - "
+                f"{self.width}/{self.height}")
