@@ -22,13 +22,13 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """comments""" 
+        """comments"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value <= 0:
             raise ValueError("width must be > 0")
         else:
-         self.__width = value
+            self.__width = value
 
     @property
     def height(self):
@@ -85,7 +85,7 @@ class Rectangle(Base):
             print()
         for elements in range(self.height):
             print(' ' * self.x + '#' * self.width)
-            
+
     def __str__(self):
         """Return a formatted string"""
         return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - "
@@ -116,4 +116,4 @@ class Rectangle(Base):
             "id": self.id,
             "height": self.height,
             "width": self.width
-        }   
+        }
