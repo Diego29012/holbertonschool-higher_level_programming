@@ -107,3 +107,4 @@ class Rectangle(Base):
             self.y = args[4]
         for d, k in kwargs.items():
             setattr(self, d, k)
+
