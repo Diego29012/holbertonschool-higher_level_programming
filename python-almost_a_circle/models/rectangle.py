@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """comments"""
+
+
 from models.base import Base
+
 
 class Rectangle(Base):
     """comments"""
