@@ -108,3 +108,12 @@ class Rectangle(Base):
         for d, k in kwargs.items():
             setattr(self, d, k)
 
+    def to_dictionary(self):
+        """Comments"""
+        return {
+            "x": self.x,
+            "y": self.y,
+            "id": self.id,
+            "height": self.height,
+            "width": self.width
+        }   
